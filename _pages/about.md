@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: 9+ years in analytics, visualization, and storytelling. A father, photographer, and lifelong learner.
 
 profile:
   align: right
@@ -13,7 +13,6 @@ profile:
     <p>Nadia, West Bengal - 741234.</p>
     <p>(+91) 70034 42044</p>
     <p>(+91) 94774 65888</p>
-    <p><a href="mailto:kiran.sankar.das@gmail.com">kiran.sankar.das@gmail.com</a></p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -29,8 +28,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+A results-driven Data Analyst with over nine years of experience transforming complex information into clear, actionable insights. My work spans data cleaning, statistical analysis, visualization, and end-to-end solution development across government, social impact, and technology projects.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Proficient in Python, R, Power BI, Tableau, and SQL, I enjoy bridging the gap between raw data and strategic decision-making.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Beyond analytics, I have a strong foundation in programming, databases, and full-stack web technologies, enabling me to build tools as well as interpret the data they generate. I’m passionate about learning, problem-solving, and creating solutions that make a measurable difference.
