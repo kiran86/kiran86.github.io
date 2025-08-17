@@ -6,8 +6,9 @@ description:
 nav: true
 nav_order: 3
 ---
+{% assign certs = site.certifications | sort: "date" | reverse %}
 <div class="container">
-  {% for cert in site.certifications %}
+  {% for cert in certs %}
     <div class="card mb-3" style="max-width: 640px;">
       <div class="row g-0">
         <div class="col-md-4 d-flex align-items-center justify-content-center">
