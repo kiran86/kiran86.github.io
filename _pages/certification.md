@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /certification/
+permalink: /certifications/
 title: certifications
 description: 
 nav: true
