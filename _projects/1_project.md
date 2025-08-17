@@ -1,81 +1,41 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: "Children in Child Care Institutions"
+description: a brief report on CCIs and children housed therein.
+img: assets/img/cci_wb.png
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+In West Bengal, presently there are 56 Govt. run Units of Home including
+8 units for Child in Conflict with Law and 75 NGO run Units of Home
+including 6 units for CCL functioning under the umbrella of Mission
+Vatsalya.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+![](/assets/img/AnnualReport_FactSheet_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+As on 31st March 2023 a total of 4148 inmates among different categories
+are being facilitated in the above-mentioned homes.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+![](/assets/img/AnnualReport_FactSheet_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+During FY 2020-21, due to COVID-19 pandemic, number of children
+facilitated through Mission Vatsalya, erstwhile CPS was declined but
+this improved in the following years.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+![](/assets/img/AnnualReport_FactSheet_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+Enrollment in Formal Education has also improved during this financial
+year as more non-CWSN CNCP children are enrolled with the formal
+education system through NIOS. Children with Special Needs who are
+unable to be enrolled in formal system are getting special education
+through Special Educators engaged at the CCI.
 
-{% raw %}
+![](/assets/img/AnnualReport_FactSheet_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+During pandemic hit years, Vocational Training Programs were vastly
+halted as access to CCIs was restricted, but these programs are
+resuming, and enrollment has also improved during this financial year.
 
-{% endraw %}
+![](/assets/img/AnnualReport_FactSheet_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
