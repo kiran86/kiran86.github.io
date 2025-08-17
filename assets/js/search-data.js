@@ -433,8 +433,13 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "certifications-",
-          title: '',
+            },},{id: "certifications-google-data-analytics-google-coursera",
+          title: 'Google Data Analytics: Google/ Coursera',
+          description: "",
+          section: "Certifications",handler: () => {
+              window.location.href = "/certifications/google-data-analytics_google-coursera/";
+            },},{id: "certifications-data-science-r-basics-harvardx-edx",
+          title: 'Data Science: R Basics, HarvardX-EdX',
           description: "",
           section: "Certifications",handler: () => {
               window.location.href = "/certifications/data-science_r-basics_harvardx/";
