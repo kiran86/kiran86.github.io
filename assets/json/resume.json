@@ -104,8 +104,20 @@
   "projects": [
     {
       "name": "Case Study: HR Analytics",
-      "summary": "This case study is about exploring a dataset for a fictitious software company called Atlas Labs. This focuses on importing, analyzing and visualizing Human Resources data in Power BI/ Tableu. Through exploratory data analysis, using DAX for Power Bi/ Tableau Calculated Field builds powerful visualizations. This case study dive deeper into attrition and what factors impact attrition and help the organization determine what action they will need to take to retain more employees.",
-      "highlights": ["Power BI/ Tableau", "Data Cleaning", "Statistical Analysis", "Data Transformation", "Data Visualization", "DAX"],
+      "summary": "This case study is about exploring a dataset for a fictitious software company called Atlas Labs. This focuses on importing, analyzing and visualizing Human Resources data in Tableu. Through exploratory data analysis, using Tableau Calculated Field builds powerful visualizations. This case study dive deeper into attrition and what factors impact attrition and help the organization determine what action they will need to take to retain more employees.",
+      "highlights": ["Tableau", "Data Cleaning", "Statistical Analysis", "Data Transformation", "Data Visualization"],
+      "endDate": "2025-08-17",
+      "links": [
+        {
+          "label": "Tableau Viz",
+          "url": "https://public.tableau.com/views/CaseStudyHRAnalytics_17547941319990/AtlasLabsHRAnalytics?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+        }
+      ]
+    },
+    {
+      "name": "Case Study: HR Analytics in Power BI",
+      "summary": "This case study is about exploring a dataset for a fictitious software company called Atlas Labs. This focuses on importing, analyzing and visualizing Human Resources data in Power BI. Through exploratory data analysis, using DAX for Power Bi builds powerful visualizations. This case study dive deeper into attrition and what factors impact attrition and help the organization determine what action they will need to take to retain more employees.",
+      "highlights": ["Power BI", "Data Cleaning", "Statistical Analysis", "Data Transformation", "Data Visualization", "DAX"],
       "endDate": "2025-08-05",
       "links": [
         {
@@ -115,10 +127,6 @@
         {
           "label": "Power BI Visualization PDF",
           "url": "https://1drv.ms/b/c/9553f9d3bca49a69/EUTTOI5okkZMvCbSCCJbHzUBvROFb1JRQE9rZ-DxFuXeOw?e=O4Z3hc"
-        },
-        {
-          "label": "Selfmade Tableau Viz",
-          "url": "https://public.tableau.com/views/CaseStudyHRAnalytics_17547941319990/AtlasLabsDemographics?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
         }
       ]
     },
@@ -143,7 +151,12 @@
       "summary": "ata-driven analysis on student activity and feedback to identify engagement trends and inform learning strategy using Python, pandas, and visualization tools.",
       "highlights": ["Jupyter Notebook", "Data Cleaning", "Statistical Analysis", "Data Transformation", "Data Visualization", "Pyhon", "Pandas", "Matplotlib", "Seaborn"],
       "endDate": "2025-04-20",
-      "url" : "https://github.com/kiran86/zylentrix-data-analysis.git"
+      "links": [
+        {
+          "label" : "GitHub Repository",
+          "url" : "https://github.com/kiran86/zylentrix-data-analysis.git"
+        }
+      ]
     }
   ],
   "education": [
@@ -259,15 +272,21 @@
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
+      "name": "Computer Programming",
+      "icon": "fa fa-code",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "C",
+        "Python",
+        "Android Apps"
+      ]
+    },
+    {
+      "name": "Photography",
+      "icon": "fa fa-camera-retro",
+      "keywords": [
+        "Birding",
+        "Wildlife",
+        "Nature"
       ]
     }
   ]
