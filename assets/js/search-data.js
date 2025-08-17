@@ -433,6 +433,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "certifications-linux-system-administration-ibm-ace",
+          title: 'Linux System Administration - IBM ACE',
+          description: "",
+          section: "Certifications",handler: () => {
+              window.location.href = "/certifications/linux-system-admin_iabace/";
+            },},{id: "certifications-rdbms-concepts-with-oracle-9i-ibm-ace",
+          title: 'RDBMS Concepts with Oracle 9i - IBM ACE',
+          description: "",
+          section: "Certifications",handler: () => {
+              window.location.href = "/certifications/rdbms_iabace/";
             },},{id: "certifications-google-data-analytics-google-coursera",
           title: 'Google Data Analytics: Google/ Coursera',
           description: "",
