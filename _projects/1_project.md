@@ -15,6 +15,12 @@ Vatsalya.
 
 ![](/assets/img/AnnualReport_FactSheet_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
 
+<div class="row">
+    <div class="col-sm mt-4 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/AnnualReport_FactSheet_files/figure-gfm/unnamed-chunk-1-1.png" title="CCI Distribution" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 As on 31st March 2023 a total of 4148 inmates among different categories
 are being facilitated in the above-mentioned homes.
 
