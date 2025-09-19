@@ -1,17 +1,14 @@
 ---
 layout: page
-title: Zylentrix Data Analysis
+title: Zylantrex Student Engagement Analysis
 description: deep dive into understanding student learning behaviors, course engagement, and feedback trends
-img: assets/img/3.jpg
+img: assets/img/Zylantrex-analysis_files/generated-image.png
 importance: 1
 category: fun
 giscus_comments: true
 ---
-
-# Zylentrix Student Engagement Analysis
-
 ## Background
-Zylentrix runs an online training platform where students enrol in different learning tracks (e.g., Digital Marketing, Python, UI/UX, etc.). The platform
+Zylantrex runs an online training platform where students enrol in different learning tracks (e.g., Digital Marketing, Python, UI/UX, etc.). The platform
 records student behaviour, such as logins, course completions, time spent on lessons, and feedback.
 
 ## Data
@@ -323,7 +320,7 @@ plt.ylabel('Completion Percentage (%)')
 
 
     
-![png](zylentrix-analysis_files/zylentrix-analysis_22_1.png)
+![png](/assets/img/Zylantrex-analysis_files/zylentrix-analysis_22_1.png)
     
 
 
@@ -349,7 +346,7 @@ plt.tight_layout()
 
 
     
-![png](zylentrix-analysis_files/zylentrix-analysis_24_0.png)
+![png](/assets/img/Zylantrex-analysis_files/zylentrix-analysis_24_0.png)
     
 
 
@@ -416,7 +413,7 @@ plt.ylabel('Feedback Rating')
 
 
     
-![png](zylentrix-analysis_files/zylentrix-analysis_28_1.png)
+![png](/assets/img/Zylantrex-analysis_files/zylentrix-analysis_28_1.png)
     
 
 
@@ -501,13 +498,13 @@ plt.show()
 
 
     
-![png](zylentrix-analysis_files/zylentrix-analysis_32_0.png)
+![png](/assets/img/Zylantrex-analysis_files/zylentrix-analysis_32_0.png)
     
 
 
 
     
-![png](zylentrix-analysis_files/zylentrix-analysis_32_1.png)
+![png](/assets/img/Zylantrex-analysis_files/zylentrix-analysis_32_1.png)
     
 
 
@@ -561,7 +558,7 @@ plt.show()
 
 
     
-![png](zylentrix-analysis_files/zylentrix-analysis_34_0.png)
+![png](/assets/img/Zylantrex-analysis_files/zylentrix-analysis_34_0.png)
     
 
 
