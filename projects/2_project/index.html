@@ -37,11 +37,11 @@
 </code></pre></div></div> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 100 entries, 0 to 99
 Data columns (total 6 columns):
- #   Column          Non-Null Count  Dtype 
----  ------          --------------  ----- 
+ #   Column          Non-Null Count  Dtype
+---  ------          --------------  -----
  0   Student_ID      100 non-null    object
  1   Name            100 non-null    object
- 2   Age             100 non-null    int64 
+ 2   Age             100 non-null    int64
  3   Gender          100 non-null    object
  4   Location        100 non-null    object
  5   Enrolment_Date  100 non-null    object
@@ -59,13 +59,13 @@ None
 </code></pre></div></div> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 100 entries, 0 to 99
 Data columns (total 6 columns):
- #   Column          Non-Null Count  Dtype         
----  ------          --------------  -----         
- 0   Student_ID      100 non-null    object        
- 1   Name            100 non-null    object        
- 2   Age             100 non-null    int64         
- 3   Gender          100 non-null    object        
- 4   Location        100 non-null    object        
+ #   Column          Non-Null Count  Dtype
+---  ------          --------------  -----
+ 0   Student_ID      100 non-null    object
+ 1   Name            100 non-null    object
+ 2   Age             100 non-null    int64
+ 3   Gender          100 non-null    object
+ 4   Location        100 non-null    object
  5   Enrolment_Date  100 non-null    datetime64[ns]
 dtypes: datetime64[ns](1), int64(1), object(4)
 memory usage: 4.8+ KB
@@ -75,12 +75,12 @@ None
 </code></pre></div></div> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 659 entries, 0 to 658
 Data columns (total 5 columns):
- #   Column                 Non-Null Count  Dtype  
----  ------                 --------------  -----  
- 0   Student_ID             659 non-null    object 
- 1   Course_ID              659 non-null    object 
- 2   Date                   659 non-null    object 
- 3   Time_Spent_Minutes     659 non-null    int64  
+ #   Column                 Non-Null Count  Dtype
+---  ------                 --------------  -----
+ 0   Student_ID             659 non-null    object
+ 1   Course_ID              659 non-null    object
+ 2   Date                   659 non-null    object
+ 3   Time_Spent_Minutes     659 non-null    int64
  4   Completion_Percentage  659 non-null    float64
 dtypes: float64(1), int64(1), object(3)
 memory usage: 25.9+ KB
@@ -91,19 +91,19 @@ None
 </span><span class="n">course_activity_df</span><span class="p">.</span><span class="nf">drop_duplicates</span><span class="p">(</span><span class="n">keep</span><span class="o">=</span><span class="sh">'</span><span class="s">first</span><span class="sh">'</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <span class="c1"># remove invalid data
 </span><span class="n">course_activity_df</span> <span class="o">=</span> <span class="n">course_activity_df</span><span class="p">[</span><span class="n">course_activity_df</span><span class="p">[</span><span class="sh">'</span><span class="s">Time_Spent_Minutes</span><span class="sh">'</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">]</span>
-<span class="n">course_activity_df</span> <span class="o">=</span> <span class="n">course_activity_df</span><span class="p">[(</span><span class="n">course_activity_df</span><span class="p">[</span><span class="sh">'</span><span class="s">Completion_Percentage</span><span class="sh">'</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&amp;</span> 
+<span class="n">course_activity_df</span> <span class="o">=</span> <span class="n">course_activity_df</span><span class="p">[(</span><span class="n">course_activity_df</span><span class="p">[</span><span class="sh">'</span><span class="s">Completion_Percentage</span><span class="sh">'</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&amp;</span>
                                         <span class="p">(</span><span class="n">course_activity_df</span><span class="p">[</span><span class="sh">'</span><span class="s">Completion_Percentage</span><span class="sh">'</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">)]</span>
 <span class="nf">print</span><span class="p">(</span><span class="n">course_activity_df</span><span class="p">.</span><span class="nf">info</span><span class="p">())</span>
 </code></pre></div></div> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 659 entries, 0 to 658
 Data columns (total 5 columns):
- #   Column                 Non-Null Count  Dtype         
----  ------                 --------------  -----         
- 0   Student_ID             659 non-null    object        
- 1   Course_ID              659 non-null    object        
+ #   Column                 Non-Null Count  Dtype
+---  ------                 --------------  -----
+ 0   Student_ID             659 non-null    object
+ 1   Course_ID              659 non-null    object
  2   Date                   659 non-null    datetime64[ns]
- 3   Time_Spent_Minutes     659 non-null    int64         
- 4   Completion_Percentage  659 non-null    float64       
+ 3   Time_Spent_Minutes     659 non-null    int64
+ 4   Completion_Percentage  659 non-null    float64
 dtypes: datetime64[ns](1), float64(1), int64(1), object(2)
 memory usage: 25.9+ KB
 None
@@ -111,11 +111,11 @@ None
 </code></pre></div></div> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 80 entries, 0 to 79
 Data columns (total 4 columns):
- #   Column         Non-Null Count  Dtype 
----  ------         --------------  ----- 
+ #   Column         Non-Null Count  Dtype
+---  ------         --------------  -----
  0   Student_ID     80 non-null     object
  1   Course_ID      80 non-null     object
- 2   Rating         80 non-null     int64 
+ 2   Rating         80 non-null     int64
  3   Feedback_Text  80 non-null     object
 dtypes: int64(1), object(3)
 memory usage: 2.6+ KB
@@ -130,11 +130,11 @@ None
 </code></pre></div></div> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 80 entries, 0 to 79
 Data columns (total 4 columns):
- #   Column         Non-Null Count  Dtype 
----  ------         --------------  ----- 
+ #   Column         Non-Null Count  Dtype
+---  ------         --------------  -----
  0   Student_ID     80 non-null     object
  1   Course_ID      80 non-null     object
- 2   Rating         80 non-null     int64 
+ 2   Rating         80 non-null     int64
  3   Feedback_Text  80 non-null     object
 dtypes: int64(1), object(3)
 memory usage: 2.6+ KB
@@ -222,8 +222,8 @@ PY202    3.277778
 Name: Rating, dtype: float64
 </code></pre></div></div> <p>So course PY202 got better rating from the students.</p> <h4 id="finding-correlation-between-completion-rate-and-feedback-rating">Finding correlation between completion rate and feedback rating</h4> <p>This will be a good observation if we find a relation between completion rate and feedback rating. To do this, a scatterplot visualization would be great.</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># inner join course activity and feedback data frames
 </span><span class="n">merged_df</span> <span class="o">=</span> <span class="n">course_activity_df</span><span class="p">.</span><span class="nf">merge</span><span class="p">(</span>
-    <span class="n">feedback_df</span><span class="p">[[</span><span class="sh">'</span><span class="s">Student_ID</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Course_ID</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Rating</span><span class="sh">'</span><span class="p">]],</span> 
-    <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="sh">'</span><span class="s">Student_ID</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Course_ID</span><span class="sh">'</span><span class="p">],</span> 
+    <span class="n">feedback_df</span><span class="p">[[</span><span class="sh">'</span><span class="s">Student_ID</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Course_ID</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Rating</span><span class="sh">'</span><span class="p">]],</span>
+    <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="sh">'</span><span class="s">Student_ID</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Course_ID</span><span class="sh">'</span><span class="p">],</span>
     <span class="n">how</span><span class="o">=</span><span class="sh">'</span><span class="s">inner</span><span class="sh">'</span>
 <span class="p">)</span>
 
@@ -340,7 +340,7 @@ Correlation for WD404: -0.021
 <span class="n">plt</span><span class="p">.</span><span class="nf">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
 <span class="n">plt</span><span class="p">.</span><span class="nf">tight_layout</span><span class="p">()</span>
 <span class="n">plt</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
-</code></pre></div></div> <p><img src="/assets/img/Zylantrex-analysis_files/zylentrix-analysis_34_0.png" alt="png"></p> <h2 id="overall-insights">Overall Insights</h2> <ul> <li>Course Engagement: <ul> <li>WD404 has higher completion percentages, suggesting it’s more engaging or easier to complete.</li> <li>PY202 shows high variability in completion, indicating inconsistent student progress.</li> <li>Time spent doesn’t strongly predict completion, suggesting other factors (e.g., course difficulty, student motivation) play a role.</li> </ul> </li> <li>Demographics: <ul> <li>Age, gender, and location show minimal impact on completion percentage, but Bangalore and Chennai students slightly outperform others.</li> <li>Students are young (mean age ~25), with balanced gender distribution.</li> </ul> </li> </ul> <h2 id="limitations">Limitations</h2> <p>Data set is very limited observations. Mostly the timeline is only for three months. This is very limited for drawing out timeline analysis.</p> </article> <div id="giscus_thread"> <script>
+</code></pre></div></div> <p><img src="/assets/img/Zylantrex-analysis_files/zylentrix-analysis_34_0.png" alt="png"></p> <h2 id="overall-insights">Overall Insights</h2> <ul> <li> <p>Course Engagement:</p> <ul> <li>WD404 has higher completion percentages, suggesting it’s more engaging or easier to complete.</li> <li>PY202 shows high variability in completion, indicating inconsistent student progress.</li> <li>Time spent doesn’t strongly predict completion, suggesting other factors (e.g., course difficulty, student motivation) play a role.</li> </ul> </li> <li> <p>Demographics:</p> <ul> <li>Age, gender, and location show minimal impact on completion percentage, but Bangalore and Chennai students slightly outperform others.</li> <li>Students are young (mean age ~25), with balanced gender distribution.</li> </ul> </li> </ul> <h2 id="limitations">Limitations</h2> <p>Data set is very limited observations. Mostly the timeline is only for three months. This is very limited for drawing out timeline analysis.</p> </article> <div id="giscus_thread"> <script>
       let giscusTheme = determineComputedTheme();
       let giscusAttributes = {
         src: 'https://giscus.app/client.js',
