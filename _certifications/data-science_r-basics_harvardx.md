@@ -5,9 +5,9 @@ link: https://courses.edx.org/certificates/ea4cc39f31cd49909ad069ef640434e6?_gl=
 title: "Data Science: R Basics, HarvardX-EdX"
 date: "2025-03-07"
 issuer: "HarvardX-EdX"
-skills: 
-    - "R"
-    - "Data Science"
-    - "Statistics"
-    - "Data Analysis"
+skills:
+  - "R"
+  - "Data Science"
+  - "Statistics"
+  - "Data Analysis"
 ---

@@ -7,11 +7,14 @@ importance: 1
 category: fun
 giscus_comments: true
 ---
+
 ## Background
+
 Zylantrex runs an online training platform where students enrol in different learning tracks (e.g., Digital Marketing, Python, UI/UX, etc.). The platform
 records student behaviour, such as logins, course completions, time spent on lessons, and feedback.
 
 ## Data
+
 The system captures data one student enrollment in different courses, their activity in different courses and feedback they give regarding different courses. Based on these system produce `.csv` files as the following:
 
 1. `students.csv` – Contains student info (ID, Name, Age, Gender, Location, Enrolment Date)
@@ -19,8 +22,8 @@ The system captures data one student enrollment in different courses, their acti
 3. `feedback.csv` – Records feedback (Student ID, Course ID, Rating [1-5], Feedback Text)
 
 ## Prepare Data
-To begin with the analysis, first load the necessary libraries and then load the `.csv` files in data frames. For this analysis we will be using `pandas` library for data preparation, cleaning and transformation where needed.
 
+To begin with the analysis, first load the necessary libraries and then load the `.csv` files in data frames. For this analysis we will be using `pandas` library for data preparation, cleaning and transformation where needed.
 
 ```python
 # load libraries
@@ -35,7 +38,6 @@ feedback_df = pd.read_csv('data/feedback.csv')
 ```
 
 Now as the data has been loaded, lets have a peek.
-
 
 ```python
 
@@ -64,15 +66,13 @@ print(feedback_df.head())
     3       S011     PY202       5   Needs improvement
     4       S073     WD404       4     Could be better
 
-
-So, from the above it is seen that the `student_df` contains details of the student's enrolled in different courses in the platform, `course_activity_df` is these students involvement in different courses, and `feedback_df` contains student feedback towards different courses. 
+So, from the above it is seen that the `student_df` contains details of the student's enrolled in different courses in the platform, `course_activity_df` is these students involvement in different courses, and `feedback_df` contains student feedback towards different courses.
 
 ## Cleaning
 
 But, this is merely an overview of the entire data set. For analysis, more details of these data sets like how large is the data set and each variables and their types are needed. Also, to get proper isight of the data and drawout meaningful observations, the data needs to be consistent and error free as much as possible and for these purposes cleaning of the data is necessay.
 
 Let's start with the student data. First have a view of the data frame's structure.
-
 
 ```python
 # check info of the data frame
@@ -82,11 +82,11 @@ print(students_df.info())
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 100 entries, 0 to 99
     Data columns (total 6 columns):
-     #   Column          Non-Null Count  Dtype 
-    ---  ------          --------------  ----- 
+     #   Column          Non-Null Count  Dtype
+    ---  ------          --------------  -----
      0   Student_ID      100 non-null    object
      1   Name            100 non-null    object
-     2   Age             100 non-null    int64 
+     2   Age             100 non-null    int64
      3   Gender          100 non-null    object
      4   Location        100 non-null    object
      5   Enrolment_Date  100 non-null    object
@@ -94,9 +94,7 @@ print(students_df.info())
     memory usage: 4.8+ KB
     None
 
-
 So this data frame contains six (6) variables with hundred (100) observations. Also a matter of relief that all the observations for each of the variables are `null` free. Although, the `Enrollment_Date` field is stored as object. It is better if this is converted to `datetime` type. Also, `Student_ID` should not be duplicate. And, whitespaces needs to be removed from `Name` and `Location` data.
-
 
 ```python
 # convert Enrollment_Date to datetime
@@ -112,21 +110,19 @@ print(students_df.info())
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 100 entries, 0 to 99
     Data columns (total 6 columns):
-     #   Column          Non-Null Count  Dtype         
-    ---  ------          --------------  -----         
-     0   Student_ID      100 non-null    object        
-     1   Name            100 non-null    object        
-     2   Age             100 non-null    int64         
-     3   Gender          100 non-null    object        
-     4   Location        100 non-null    object        
+     #   Column          Non-Null Count  Dtype
+    ---  ------          --------------  -----
+     0   Student_ID      100 non-null    object
+     1   Name            100 non-null    object
+     2   Age             100 non-null    int64
+     3   Gender          100 non-null    object
+     4   Location        100 non-null    object
      5   Enrolment_Date  100 non-null    datetime64[ns]
     dtypes: datetime64[ns](1), int64(1), object(4)
     memory usage: 4.8+ KB
     None
 
-
 And the Student data is ready to be coocked. Similarly, for the course activity data, let's have a look at the data structure.
-
 
 ```python
 # check info of the data frame
@@ -136,20 +132,18 @@ print(course_activity_df.info())
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 659 entries, 0 to 658
     Data columns (total 5 columns):
-     #   Column                 Non-Null Count  Dtype  
-    ---  ------                 --------------  -----  
-     0   Student_ID             659 non-null    object 
-     1   Course_ID              659 non-null    object 
-     2   Date                   659 non-null    object 
-     3   Time_Spent_Minutes     659 non-null    int64  
+     #   Column                 Non-Null Count  Dtype
+    ---  ------                 --------------  -----
+     0   Student_ID             659 non-null    object
+     1   Course_ID              659 non-null    object
+     2   Date                   659 non-null    object
+     3   Time_Spent_Minutes     659 non-null    int64
      4   Completion_Percentage  659 non-null    float64
     dtypes: float64(1), int64(1), object(3)
     memory usage: 25.9+ KB
     None
 
-
 Here also `Date` field to be converted in `datatime` type, duplicates to be removed and additionally, invalid or unrealistic data like `Time_Spent_Minutes` less than zero (0) or `Competion_Percentage` less than zero (0)/ greater than hundred (100) to be removed.
-
 
 ```python
 # convert Date to datetime
@@ -158,7 +152,7 @@ course_activity_df['Date'] = pd.to_datetime(course_activity_df['Date'], errors='
 course_activity_df.drop_duplicates(keep='first', inplace=True)
 # remove invalid data
 course_activity_df = course_activity_df[course_activity_df['Time_Spent_Minutes'] >= 0]
-course_activity_df = course_activity_df[(course_activity_df['Completion_Percentage'] >= 0) & 
+course_activity_df = course_activity_df[(course_activity_df['Completion_Percentage'] >= 0) &
                                         (course_activity_df['Completion_Percentage'] <= 100)]
 print(course_activity_df.info())
 ```
@@ -166,20 +160,18 @@ print(course_activity_df.info())
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 659 entries, 0 to 658
     Data columns (total 5 columns):
-     #   Column                 Non-Null Count  Dtype         
-    ---  ------                 --------------  -----         
-     0   Student_ID             659 non-null    object        
-     1   Course_ID              659 non-null    object        
+     #   Column                 Non-Null Count  Dtype
+    ---  ------                 --------------  -----
+     0   Student_ID             659 non-null    object
+     1   Course_ID              659 non-null    object
      2   Date                   659 non-null    datetime64[ns]
-     3   Time_Spent_Minutes     659 non-null    int64         
-     4   Completion_Percentage  659 non-null    float64       
+     3   Time_Spent_Minutes     659 non-null    int64
+     4   Completion_Percentage  659 non-null    float64
     dtypes: datetime64[ns](1), float64(1), int64(1), object(2)
     memory usage: 25.9+ KB
     None
 
-
 And lastly for the feedback data. Here is the structure of the data.
-
 
 ```python
 print(feedback_df.info())
@@ -188,19 +180,17 @@ print(feedback_df.info())
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 80 entries, 0 to 79
     Data columns (total 4 columns):
-     #   Column         Non-Null Count  Dtype 
-    ---  ------         --------------  ----- 
+     #   Column         Non-Null Count  Dtype
+    ---  ------         --------------  -----
      0   Student_ID     80 non-null     object
      1   Course_ID      80 non-null     object
-     2   Rating         80 non-null     int64 
+     2   Rating         80 non-null     int64
      3   Feedback_Text  80 non-null     object
     dtypes: int64(1), object(3)
     memory usage: 2.6+ KB
     None
 
-
 Remove whitespaces from the feedback text and invalid rating like bellow 1 or more than 5 and this will be ready. As there is no date of feedback given, we will remove the duplicates based on `Student_ID` and `Course_ID` but this time we will keep the last occurence considering that to be the latest feedback by a student regarding a course.
-
 
 ```python
 # remove whitespace from Feedback_Text
@@ -215,25 +205,25 @@ print(feedback_df.info())
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 80 entries, 0 to 79
     Data columns (total 4 columns):
-     #   Column         Non-Null Count  Dtype 
-    ---  ------         --------------  ----- 
+     #   Column         Non-Null Count  Dtype
+    ---  ------         --------------  -----
      0   Student_ID     80 non-null     object
      1   Course_ID      80 non-null     object
-     2   Rating         80 non-null     int64 
+     2   Rating         80 non-null     int64
      3   Feedback_Text  80 non-null     object
     dtypes: int64(1), object(3)
     memory usage: 2.6+ KB
     None
-
 
 It is a good thing to see that removing duplicates or invalid data from the data frames does not shrink the size, i.e., the observations are intact and this qualifies as good data.
 
 Now the cleaning is done, analysis can be started.
 
 ## Analysis
-#### Average Completion Rate for Courses
-First find out what is the average completion rate for the courses.
 
+#### Average Completion Rate for Courses
+
+First find out what is the average completion rate for the courses.
 
 ```python
 # average comletion rate across all courses
@@ -243,10 +233,9 @@ print(f"Overall Average Completion Rate: {overall_avg_completion:.2f}%")
 
     Overall Average Completion Rate: 54.78%
 
-
 #### Highest & Lowest Engagement
-Next let's find out which courses have highest and lowest average engagement.
 
+Next let's find out which courses have highest and lowest average engagement.
 
 ```python
 # Calculate average engagement time by course
@@ -273,16 +262,15 @@ print(f"Course with Lowest Average Engagement Time: {lowest_course} ({lowest_tim
     UX303     99.816568
     DM101    102.427673
     Name: Time_Spent_Minutes, dtype: float64
-    
+
     Course with Highest Average Engagement Time: DM101 (102.43 minutes)
     Course with Lowest Average Engagement Time: PY202 (93.90 minutes)
 
-
 #### Engagement by Age Groups and Location
-Okay, now lets find out how this engagement differs in different ages of students and their residence. For this, as the age of the student is in `students_df` data frame, it is needed to be joined with `course_activity_df` data frame based on `Student_ID` and `Location`. 
+
+Okay, now lets find out how this engagement differs in different ages of students and their residence. For this, as the age of the student is in `students_df` data frame, it is needed to be joined with `course_activity_df` data frame based on `Student_ID` and `Location`.
 
 First, to find out activities in age groups, a age group wise bin is needed. For this analysis, a visualization based on age groups would be best to understand the pattern.
-
 
 ```python
 # merge course activity and students data frames
@@ -311,21 +299,11 @@ plt.title('Average completion percentage by age group')
 plt.ylabel('Completion Percentage (%)')
 ```
 
-
-
-
     Text(0, 0.5, 'Completion Percentage (%)')
 
-
-
-
-    
 ![png](/assets/img/Zylantrex-analysis_files/zylentrix-analysis_22_1.png)
-    
-
 
 This is a good finding that though young learners are more active on the platform, aged professionals are more consistent and tends to complete the courses. Now lets do the same based on student's location.
-
 
 ```python
 # visualize the data
@@ -344,19 +322,15 @@ plt.ylabel('Completion Percentage (%)')
 plt.tight_layout()
 ```
 
-
-    
 ![png](/assets/img/Zylantrex-analysis_files/zylentrix-analysis_24_0.png)
-    
-
 
 Okay, so Kolkata people are more active on the platform but Mumbaikars are ahead in completing courses.
 
 From both above visualizations, one thing is of good achievement for the platform is that irrespective of age group or location, students are very active with the courses with more than 90 minutes of engagent and completion percentage is also above 50%.
 
 #### Average Feedback Rating
-Now that student's interactions with the platform is seen, lets check how they feel about the courses. To find that, simply find out the average feedback rating of each course.
 
+Now that student's interactions with the platform is seen, lets check how they feel about the courses. To find that, simply find out the average feedback rating of each course.
 
 ```python
 # average rating by course
@@ -367,7 +341,6 @@ print("\nAverage Rating by Course:")
 print(avg_rating_by_course)
 ```
 
-    
     Average Rating by Course:
     Course_ID
     WD404    2.789474
@@ -376,18 +349,17 @@ print(avg_rating_by_course)
     PY202    3.277778
     Name: Rating, dtype: float64
 
-
 So course PY202 got better rating from the students.
 
 #### Finding correlation between completion rate and feedback rating
-This will be a good observation if we find a relation between completion rate and feedback rating. To do this, a scatterplot visualization would be great.
 
+This will be a good observation if we find a relation between completion rate and feedback rating. To do this, a scatterplot visualization would be great.
 
 ```python
 # inner join course activity and feedback data frames
 merged_df = course_activity_df.merge(
-    feedback_df[['Student_ID', 'Course_ID', 'Rating']], 
-    on=['Student_ID', 'Course_ID'], 
+    feedback_df[['Student_ID', 'Course_ID', 'Rating']],
+    on=['Student_ID', 'Course_ID'],
     how='inner'
 )
 
@@ -404,21 +376,11 @@ plt.xlabel('Completion Percentage (%)')
 plt.ylabel('Feedback Rating')
 ```
 
-
-
-
     Text(0, 0.5, 'Feedback Rating')
 
-
-
-
-    
 ![png](/assets/img/Zylantrex-analysis_files/zylentrix-analysis_28_1.png)
-    
-
 
 But alas. There is no direct relationship between the course completion rate and rating. To confirm this statistically, course specific correlation between the two variable can be deduced.
-
 
 ```python
 # find Correlation by course
@@ -434,12 +396,11 @@ for course in merged_df['Course_ID'].unique():
     Correlation for UX303: 0.311
     Correlation for WD404: -0.021
 
-
 All the courses have very weak to weak correlation confirming that completion percentage doesn't directly influence positive or negetive feedback.
 
 #### Segments based on engagement and satisfaction.
-To identify the top 3 student segments based on engagement and satisfaction where Engagement will be measured using `Time_Spent_Minutes` and `Completion_Percentage` from `course_activity_df`, and satisfaction will be measured using `Rating` from `feedback_df`. Then segment students by combining demographic variables (e.g., Age_Group, Gender, Location from `students_df`) and course-related variables (e.g., Course_ID), calculate average engagement and satisfaction metrics for each segment, and rank them to identify the top 3.
 
+To identify the top 3 student segments based on engagement and satisfaction where Engagement will be measured using `Time_Spent_Minutes` and `Completion_Percentage` from `course_activity_df`, and satisfaction will be measured using `Rating` from `feedback_df`. Then segment students by combining demographic variables (e.g., Age_Group, Gender, Location from `students_df`) and course-related variables (e.g., Course_ID), calculate average engagement and satisfaction metrics for each segment, and rank them to identify the top 3.
 
 ```python
 # merge data frames
@@ -496,23 +457,15 @@ plt.ylabel('Feedback Rating (1-5)')
 plt.show()
 ```
 
-
-    
 ![png](/assets/img/Zylantrex-analysis_files/zylentrix-analysis_32_0.png)
-    
 
-
-
-    
 ![png](/assets/img/Zylantrex-analysis_files/zylentrix-analysis_32_1.png)
-    
-
 
 WD404 stands out for high engagement, PY202 for high satisfaction, and DM101 for balanced metrics. The scatter plot shows WD404 and PY202 as outliers in engagement and rating, respectively.
 
 #### Trends over time
-Lastly let's find out some trends in the data.
 
+Lastly let's find out some trends in the data.
 
 ```python
 # Create a month-year column for aggregation
@@ -556,21 +509,20 @@ plt.tight_layout()
 plt.show()
 ```
 
-
-    
 ![png](/assets/img/Zylantrex-analysis_files/zylentrix-analysis_34_0.png)
-    
-
 
 ## Overall Insights
+
 - Course Engagement:
-    - WD404 has higher completion percentages, suggesting it’s more engaging or easier to complete.
-    - PY202 shows high variability in completion, indicating inconsistent student progress.
-    - Time spent doesn’t strongly predict completion, suggesting other factors (e.g., course difficulty, student motivation) play a role.
+
+  - WD404 has higher completion percentages, suggesting it’s more engaging or easier to complete.
+  - PY202 shows high variability in completion, indicating inconsistent student progress.
+  - Time spent doesn’t strongly predict completion, suggesting other factors (e.g., course difficulty, student motivation) play a role.
 
 - Demographics:
-    - Age, gender, and location show minimal impact on completion percentage, but Bangalore and Chennai students slightly outperform others.
-    - Students are young (mean age ~25), with balanced gender distribution.
+  - Age, gender, and location show minimal impact on completion percentage, but Bangalore and Chennai students slightly outperform others.
+  - Students are young (mean age ~25), with balanced gender distribution.
 
 ## Limitations
+
 Data set is very limited observations. Mostly the timeline is only for three months. This is very limited for drawing out timeline analysis.

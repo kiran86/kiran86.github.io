@@ -2,11 +2,13 @@
 layout: page
 permalink: /certifications/
 title: certifications
-description: 
+description:
 nav: true
 nav_order: 3
 ---
+
 {% assign certs = site.certifications | sort: "date" | reverse %}
+
 <div class="container">
   {% for cert in certs %}
     <div class="card mb-3" style="max-width: 640px;">

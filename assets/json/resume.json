@@ -32,78 +32,43 @@
       "name": "Data Analytics",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Data Cleaning",
-        "Statistical Analysis",
-        "Data Visualization",
-        "Data Transformation"
-      ]
+      "keywords": ["Data Cleaning", "Statistical Analysis", "Data Visualization", "Data Transformation"]
     },
     {
       "name": "Data Analytics Tools",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Python",
-        "pandas",
-        "numpy",
-        "matplotlib",
-        "seaborn",
-        "R"
-      ]
+      "keywords": ["Python", "pandas", "numpy", "matplotlib", "seaborn", "R"]
     },
     {
       "name": "Data Visualization Packages",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Power BI",
-        "Tableau",
-        "MS Excel"
-      ]
+      "keywords": ["Power BI", "Tableau", "MS Excel"]
     },
     {
       "name": "DBMS",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "SQL",
-        "MySQL",
-        "PostgreSQL",
-        "MS Access"
-      ]
+      "keywords": ["SQL", "MySQL", "PostgreSQL", "MS Access"]
     },
     {
       "name": "Programming",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "C",
-        "C++",
-        "JAVA"
-      ]
+      "keywords": ["C", "C++", "JAVA"]
     },
     {
       "name": "Web Technologies & Frameworks",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "PHP",
-        "Node.js"
-      ]
+      "keywords": ["HTML", "CSS", "JavaScript", "PHP", "Node.js"]
     },
     {
       "name": "Operating Systems",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Linux (Ubuntu)",
-        "Windows",
-        "macOS"
-      ]
+      "keywords": ["Linux (Ubuntu)", "Windows", "macOS"]
     }
   ],
   "projects": [
@@ -154,12 +119,22 @@
     {
       "name": "Zylentrix Data Analysis",
       "summary": "ata-driven analysis on student activity and feedback to identify engagement trends and inform learning strategy using Python, pandas, and visualization tools.",
-      "highlights": ["Jupyter Notebook", "Data Cleaning", "Statistical Analysis", "Data Transformation", "Data Visualization", "Pyhon", "Pandas", "Matplotlib", "Seaborn"],
+      "highlights": [
+        "Jupyter Notebook",
+        "Data Cleaning",
+        "Statistical Analysis",
+        "Data Transformation",
+        "Data Visualization",
+        "Pyhon",
+        "Pandas",
+        "Matplotlib",
+        "Seaborn"
+      ],
       "endDate": "2025-04-20",
       "links": [
         {
-          "label" : "GitHub Repository",
-          "url" : "https://github.com/kiran86/zylentrix-data-analysis.git"
+          "label": "GitHub Repository",
+          "url": "https://github.com/kiran86/zylentrix-data-analysis.git"
         }
       ]
     }
@@ -279,20 +254,12 @@
     {
       "name": "Computer Programming",
       "icon": "fa fa-code",
-      "keywords": [
-        "C",
-        "Python",
-        "Android Apps"
-      ]
+      "keywords": ["C", "Python", "Android Apps"]
     },
     {
       "name": "Photography",
       "icon": "fa fa-camera-retro",
-      "keywords": [
-        "Birding",
-        "Wildlife",
-        "Nature"
-      ]
+      "keywords": ["Birding", "Wildlife", "Nature"]
     }
   ]
 }
