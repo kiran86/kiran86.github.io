@@ -6,7 +6,7 @@
     "email": "kiran.sankar.das@gmail.com",
     "phone": "(+91) 7003442044",
     "url": "https://kiran86.github.io/",
-    "profile": "Results-driven Data Analyst with 9+ years of experience in extracting actionable insights from complex datasets. Proficient in data cleaning, statistical analysis, and data visualization. Passionate about transforming raw data into meaningful solutions. Adept at collaborating with cross-functional teams to drive data-informed decision-making.",
+    "summary": "Results-driven Data Analyst with 9+ years of experience in extracting actionable insights from complex datasets. Proficient in data cleaning, statistical analysis, and data visualization. Passionate about transforming raw data into meaningful solutions. Adept at collaborating with cross-functional teams to drive data-informed decision-making.",
     "location": {
       "address": "6/1956 Gayeshpur, Kalyani",
       "postalCode": "741234",
@@ -16,9 +16,14 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "kiran86",
+        "url": "https://www.linkedin.com/in/kiran-sankar-das/"
+      },
+      {
+        "network": "GitHub",
+        "username": "kiran86",
+        "url": "https://github.com/kiran86"
       }
     ]
   },
@@ -232,9 +237,9 @@
   ],
   "work": [
     {
-      "name": "Department of Women & Child Development & Social Welfare, Govt. of WB",
-      "position": "Consultant for Child Protection MIS",
-      "url": "https://wcdsw.wb.gov.in/",
+      "name": "Directorate of Child Rights and Trafficking, West Bengal",
+      "position": "Child Protection MIS",
+      "url": "https://wcdsw.wb.gov.in/dcrt/",
       "startDate": "2017-09-01",
       "summary": "Developed data-driven solutions to enhance child protection systems, improving reporting accuracy. Collaborated on MIS deployment, reducing processing time. Conducted statistical analysis with insights and visuals to support policy decisions.",
       "highlights": ["Data Analysis", "Data Visualization", "Statistical Analysis", "Policy Analysis", "MIS Deployment", "Report Writing"]
