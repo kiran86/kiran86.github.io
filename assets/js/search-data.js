@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-repositories",
           title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          description: "Have a glimpse under the hood.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
@@ -463,11 +463,16 @@ ninja.data = [{
           description: "deep dive into understanding student learning behaviors, course engagement, and feedback trends",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-hr-analytics-in-tableau",
+          title: 'HR Analytics in Tableau',
+          description: "An interactive HR dashboard built in Tableau to analyze workforce trends.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
+              window.location.href = "/projects/3_hr-analytics-tableau/";
+            },},{id: "projects-hr-analytics-in-power-bi",
+          title: 'HR Analytics in Power BI',
+          description: "An interactive HR dashboard built in Power BI to analyze workforce trends.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_hr-analytics-powerbi/";
             },},{id: "projects-project-4",
           title: 'project 4',
           description: "another without an image",
