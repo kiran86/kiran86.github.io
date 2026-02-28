@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 13
-category: fun
+title: RealEstate Advisor
+description: A Python-based data exploration and visualization project focused on Indian housing prices. This repository provides tools and a Streamlit application to analyze real estate trends, perform exploratory data analysis, and offer insights for potential buyers or investors.
+img: /assets/img/real-estate.png
+importance: 1
+category: internship
 ---
 
 Every project has a beautiful feature showcase page.
