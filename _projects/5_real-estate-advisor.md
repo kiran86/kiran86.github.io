@@ -129,11 +129,4 @@ Contributions, issues, and feature requests are welcome! Feel free to open a pul
 
 ---
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-
----
-
 &copy; 2026 RealEstate Advisor Project by kiran86. All rights reserved.
