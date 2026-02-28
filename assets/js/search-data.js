@@ -473,16 +473,11 @@ ninja.data = [{
           description: "An interactive HR dashboard built in Power BI to analyze workforce trends.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_hr-analytics-powerbi/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+            },},{id: "projects-realestate-advisor",
+          title: 'RealEstate Advisor',
+          description: "A Python-based data exploration and visualization project focused on Indian housing prices. This repository provides tools and a Streamlit application to analyze real estate trends, perform exploratory data analysis, and offer insights for potential buyers or investors.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
+              window.location.href = "/projects/5_real-estate-advisor/";
             },},{id: "projects-project-6",
           title: 'project 6',
           description: "a project with no image",
