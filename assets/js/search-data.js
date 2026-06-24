@@ -457,7 +457,7 @@ ninja.data = [{
           title: 'Children in Child Care Institutions',
           description: "a brief report on CCIs and children housed therein.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
+              window.location.href = "/projects/1_annual-report-children-in-cci/";
             },},{id: "projects-zylantrex-student-engagement-analysis",
           title: 'Zylantrex Student Engagement Analysis',
           description: "deep dive into understanding student learning behaviors, course engagement, and feedback trends",
@@ -478,26 +478,11 @@ ninja.data = [{
           description: "A Python-based data exploration and visualization project focused on Indian housing prices. This repository provides tools and a Streamlit application to analyze real estate trends, perform exploratory data analysis, and offer insights for potential buyers or investors.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_real-estate-advisor/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+            },},{id: "projects-bird-species-observation-analysis",
+          title: 'Bird Species Observation Analysis',
+          description: "This project combines bird monitoring observations from forest and grassland Excel workbooks into a single cleaned dataset for analysis, SQL exploration, and dashboarding.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/projects/6_bird-species-observation/";
             },},{
         id: 'social-email',
         title: 'email',
