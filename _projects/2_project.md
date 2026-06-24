@@ -3,7 +3,7 @@ layout: page
 title: Zylantrex Student Engagement Analysis
 description: deep dive into understanding student learning behaviors, course engagement, and feedback trends
 img: assets/img/Zylantrex-analysis_files/generated-image.png
-importance: 1
+importance: 10
 category: fun
 giscus_comments: true
 ---
